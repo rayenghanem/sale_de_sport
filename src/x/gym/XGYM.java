@@ -19,9 +19,9 @@ public class XGYM {
     public static void main(String[] args) {
         // TODO code application logic here
         PacksService ps = new PacksService();
-        Packs p = new Packs("Gold","60dt","All acces and personal trainer","1 month","2022-01-01");
+        Packs p = new Packs("Gold","60dt","All acces and personal trainer","1 Year","2022-01-01");
         ps.ajouterPacks(p);
-        //System.out.println(ps.getPacks());
+        System.out.println(ps.getPacks());
     }
     
 }
