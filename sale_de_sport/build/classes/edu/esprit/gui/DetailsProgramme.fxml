@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.gui.DetailsProgrammeController">
+   <children>
+      <ImageView fitHeight="105.0" fitWidth="123.0" layoutX="481.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../build/classes/249845369_653916852438499_4441256453964501468_n.gif" />
+         </image>
+      </ImageView>
+      <Label layoutX="164.0" layoutY="67.0" prefHeight="27.0" prefWidth="222.0" text="Liste des Programmes " textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tftable" layoutY="121.0" prefHeight="278.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="tfid_pro" prefWidth="131.0" text="id_pro" />
+          <TableColumn fx:id="tftype_sport" prefWidth="140.0" text="type_sport" />
+            <TableColumn fx:id="tfcoach_name" prefWidth="180.0" text="coach_name" />
+            <TableColumn fx:id="tfdate" prefWidth="148.0" text="date" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.gui.InscriptionController">
+   <children>
+      <ImageView fitHeight="140.0" fitWidth="230.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../build/classes/téléchargement.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="134.0" fitWidth="217.0" layoutX="-7.0" layoutY="140.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../build/classes/téléchargement%20(2).jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="126.0" fitWidth="210.0" layoutY="275.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../build/classes/téléchargement%20(1).jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="155.0" fitWidth="202.0" layoutX="435.0" layoutY="-5.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../build/classes/249845369_653916852438499_4441256453964501468_n.gif" />
+         </image>
+      </ImageView>
+      <Button fx:id="btajout" layoutX="25.0" layoutY="43.0" mnemonicParsing="false" style="-fx-background-color: red;" text="ajouter un programme" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btmod" layoutX="21.0" layoutY="142.0" mnemonicParsing="false" style="-fx-background-color: red;" text="modifier un programme" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btsup" layoutX="16.0" layoutY="259.0" mnemonicParsing="false" style="-fx-background-color: red;" text="supprimer un programme" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="239.0" layoutY="63.0" text="Id_Pro:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="236.0" layoutY="147.0" text="Type_sport:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="239.0" layoutY="221.0" prefHeight="20.0" prefWidth="56.0" text="Date:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="240.0" layoutY="306.0" text="coach_name:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ftid_pro" layoutX="270.0" layoutY="96.0" />
+      <TextField fx:id="tfdate" layoutX="271.0" layoutY="262.0" />
+      <TextField fx:id="tfcoach_name" layoutX="271.0" layoutY="341.0" />
+      <Button fx:id="btaff" layoutX="29.0" layoutY="338.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="153.0" style="-fx-background-color: red;" text="affichage" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btvalider" layoutX="478.0" layoutY="338.0" mnemonicParsing="false" onAction="#saveprogramme" prefHeight="40.0" prefWidth="108.0" style="-fx-background-color: red;" text="valider" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="tftype_sport" layoutX="271.0" layoutY="188.0" />
+   </children>
+</AnchorPane>
