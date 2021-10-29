@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="1000.0" prefWidth="1920.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Intégration.HomeController">
+   <children>
+      <ImageView fx:id="login" fitHeight="1000.0" fitWidth="1777.78" layoutX="71.11" onMouseClicked="#openAuth" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/Component%201%20–%201.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="300.0" fitWidth="300.0" layoutX="810.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/LOGOS.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="68.0" fitWidth="1920.0" layoutY="932.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/footer.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="760.0" layoutY="431.5" style="-fx-font-family: Raleway;" text="START UNKOWN" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="50.23" />
+         </font>
+      </Label>
+      <Label layoutX="298.0" layoutY="500.0" style="-fx-font-weight: Bold; -fx-font-family: Montserrat;" text="FINISH UNFORGETTABLE" textAlignment="CENTER" textFill="#ff0018">
+         <font>
+            <Font size="104.47" />
+         </font>
+      </Label>
+      <Label layoutX="100.0" layoutY="76.0" style="-fx-font-family: Poppins-Medium;" text="HOME" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="200.0" layoutY="76.0" style="-fx-font-family: Poppins-Medium;" text="PLANING" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="330.0" layoutY="76.0" style="-fx-font-family: Poppins-Medium;" text="PRODUCTS" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="Packs" layoutX="480.0" layoutY="76.0" onMouseClicked="#openPacks" style="-fx-font-family: Poppins-Medium;" text="PACKS" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="1200.0" layoutY="76.0" style="-fx-font-family: Poppins-Medium;" text="ABOUT" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="1300.0" layoutY="76.0" style="-fx-font-family: Poppins-Medium;" text="ONLINE COACHING" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="1510.0" layoutY="76.0" style="-fx-font-family: Poppins-Medium;" text="TRAINERS" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="1640.0" layoutY="76.0" style="-fx-font-family: Poppins-Medium;" text="CONTACT" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="Auth" layoutX="580.0" layoutY="76.0" onMouseClicked="#openauth" style="-fx-font-family: Poppins-Medium;" text="LOGIN" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Line endX="63.5" endY="0.41" layoutX="100.0" layoutY="107.5" stroke="#f92524" />
+   </children>
+</AnchorPane>

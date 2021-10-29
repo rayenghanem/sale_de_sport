@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package gui;
+package Intégration;
 
 import java.io.IOException;
 import java.util.logging.Level;
@@ -17,25 +17,25 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
-
+import gui.MembershipController;
 /**
  *
  * @author ahmed4
  */
-public class packs_window extends Application {
+public class Home_window extends Application {
     
     @Override
     public void start(Stage primaryStage) {
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("membership.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("Home.fxml"));
             
             Scene scene = new Scene(root);
             
-            primaryStage.setTitle("Packs Mangement");
+            primaryStage.setTitle("X-GYM HOME");
             primaryStage.setScene(scene);
             primaryStage.show();
         } catch (IOException ex) {
-            Logger.getLogger(packs_window.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Home_window.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 

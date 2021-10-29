@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="1000.0" prefWidth="1920.0" style="-fx-background-color: #1e1e1e;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MembershipController2_1">
+   <children>
+      <Group layoutX="98.5" layoutY="200.0">
+         <children>
+            <ImageView fitHeight="99.0" fitWidth="50.0" layoutX="1673.0" layoutY="373.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Component%201%20–%205.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnBack" fitHeight="99.0" fitWidth="50.0" layoutY="373.0" onMouseClicked="#Back" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Component%201%20–%204.png" />
+               </image>
+            </ImageView>
+            <Group layoutX="680.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="77.0" style="-fx-font-size: 37; -fx-font-weight: BOLD; -fx-alignment: center; -fx-text-fill: white;" text="Annual Plan" textAlignment="CENTER">
+                     <font>
+                        <Font size="37.0" />
+                     </font>
+                  </Label>
+                  <Line endX="226.0" layoutX="69.25" layoutY="61.0" stroke="#f92524" strokeWidth="5.0" />
+                  <ImageView fitHeight="39.0" fitWidth="39.0" layoutX="324.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/Group%2063.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="btnBack2" fitHeight="39.0" fitWidth="39.0" layoutY="11.0" onMouseClicked="#Back2" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/Group%201526.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <Group layoutX="1169.0" layoutY="136.0">
+               <children>
+                  <Pane prefHeight="540.0" prefWidth="390.0" style=".fx.background-color: #FFFFFF; -fx-border-color: #CCCCCC; -fx-border-width: 2;" styleClass="br-r" stylesheets="@../StyleSheets/membership.css" />
+                  <ImageView fitHeight="88.38" fitWidth="149.78" layoutX="120.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/Path%203890.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="tfnom5" layoutX="65.0" layoutY="149.0" prefHeight="39.0" prefWidth="260.0" style="-fx-font-size: 25; -fx-alignment: center; -fx-background-color: #1e1e1e; -fx-text-fill: white;">
+                     <font>
+                        <Font name="Times New Roman Bold" size="25.0" />
+                     </font>
+                  </TextField>
+                  <TextField alignment="TOP_CENTER" layoutX="65.0" layoutY="200.0" prefHeight="70.0" prefWidth="260.0" style="-fx-font-size: 16; -fx-alignment: center; -fx-background-color: #1e1e1e; -fx-text-fill: white;">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <Line endX="336.0" layoutX="24.25" layoutY="285.0" stroke="#707070" />
+                  <TextField fx:id="tfmontant5" layoutX="78.0" layoutY="300.0" prefHeight="46.0" prefWidth="106.0" style="-fx-font-size: 25; -fx-font-weight: Bold; -fx-alignment: center; -fx-background-color: #1e1e1e; -fx-text-fill: white;">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="tfduration5" editable="false" layoutX="199.0" layoutY="300.0" prefHeight="46.0" prefWidth="118.0" style="-fx-font-size: 25; -fx-font-weight: Bold; -fx-alignment: center; -fx-background-color: #1e1e1e; -fx-text-fill: white;">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="187.0" layoutY="305.0" prefHeight="39.0" style="-fx-font-size: 25; -fx-font-weight: Bold; -fx-text-fill: white;" text="/">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnDelete5" layoutX="101.0" layoutY="446.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#deletePack5" prefHeight="58.0" prefWidth="187.0" style="-fx-background-color: #FFFFFF; -fx-font-size: 20; -fx-backfround-radius: 5; -fx-text-fill: #000000; -fx-alignment: center;" text="Delete" textAlignment="CENTER">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnModify2" layoutX="101.0" layoutY="375.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#modifyPack5" prefHeight="58.0" prefWidth="187.0" style="-fx-background-color: #FFFFFF; -fx-font-size: 20; -fx-background-radius: 5; -fx-text-fill: #000000; -fx-alignment: center;" text="Modify" textAlignment="CENTER">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Group>
+            <Group layoutX="167.0" layoutY="136.0">
+               <children>
+                  <Pane prefHeight="540.0" prefWidth="390.0" style=".fx.background-color: #FFFFFF; -fx-border-color: #CCCCCC; -fx-border-width: 2;" styleClass="br-r" stylesheets="@../StyleSheets/membership.css" />
+                  <ImageView fitHeight="88.38" fitWidth="149.78" layoutX="121.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/Group%201514.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="tfnom3" layoutX="65.0" layoutY="149.0" prefHeight="45.0" prefWidth="260.0" style="-fx-font-size: 25; -fx-alignment: center; -fx-background-color: #1e1e1e; -fx-text-fill: white;" text="Gold Package">
+                     <font>
+                        <Font name="Times New Roman Bold" size="25.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="tfdescription3" alignment="TOP_CENTER" layoutX="65.0" layoutY="200.0" prefHeight="70.0" prefWidth="260.0" promptText="Package description" style="-fx-font-size: 16; -fx-alignment: center; -fx-background-color: #1e1e1e; -fx-text-fill: white;" text="Unlimited Group Fitness Classes+Private coach+Access to swimming pool and sauna">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <Line endX="336.0" layoutX="25.25" layoutY="285.0" stroke="#707070" />
+                  <TextField fx:id="tfmontant3" layoutX="82.0" layoutY="300.0" prefHeight="46.0" prefWidth="107.0" style="-fx-font-size: 25; -fx-font-weight: Bold; -fx-alignment: center; -fx-background-color: #1e1e1e; -fx-text-fill: white;" text="150DT ">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="tfduration3" editable="false" layoutX="200.0" layoutY="300.0" prefHeight="46.0" prefWidth="118.0" style="-fx-font-size: 25; -fx-font-weight: Bold; -fx-alignment: center; -fx-background-color: #1e1e1e; -fx-text-fill: white;" text="Year">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="188.0" layoutY="305.0" prefHeight="39.0" style="-fx-font-size: 25; -fx-font-weight: Bold; -fx-text-fill: white;" text="/">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnDelete3" layoutX="102.0" layoutY="446.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#deletePack3" prefHeight="58.0" prefWidth="187.0" style="-fx-background-color: #FFFFFF; -fx-font-size: 20; -fx-background-radius: 5; -fx-text-fill: #000000; -fx-alignment: center;" text="Delete" textAlignment="CENTER">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnmodify3" layoutX="102.0" layoutY="375.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#modifyPack3" prefHeight="58.0" prefWidth="187.0" style="-fx-background-color: #FFFFFF; -fx-font-size: 20; -fx-background-radius: 5; -fx-text-fill: #000000; -fx-alignment: center;" text="Modify" textAlignment="CENTER">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Group>
+            <Group layoutX="668.25" layoutY="136.0">
+               <children>
+                  <Pane prefHeight="540.0" prefWidth="390.0" style=".fx.background-color: #FFFFFF; -fx-border-color: #CCCCCC; -fx-border-width: 2;" styleClass="br-r" stylesheets="@../StyleSheets/membership.css" />
+                  <ImageView fitHeight="88.38" fitWidth="149.78" layoutX="120.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/Path%203890.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="tfnom" layoutX="65.0" layoutY="149.0" prefHeight="39.0" prefWidth="260.0" style="-fx-font-size: 25; -fx-alignment: center; -fx-background-color: #1e1e1e; -fx-text-fill: white;">
+                     <font>
+                        <Font name="Times New Roman Bold" size="25.0" />
+                     </font>
+                  </TextField>
+                  <TextField alignment="TOP_CENTER" layoutX="65.0" layoutY="200.0" prefHeight="70.0" prefWidth="260.0" style="-fx-font-size: 16; -fx-alignment: center; -fx-background-color: #1e1e1e; -fx-text-fill: white;">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <Line endX="336.0" layoutX="24.25" layoutY="285.0" stroke="#707070" />
+                  <TextField fx:id="tfmontant" layoutX="78.0" layoutY="300.0" prefHeight="46.0" prefWidth="106.0" style="-fx-font-size: 25; -fx-font-weight: Bold; -fx-alignment: center; -fx-background-color: #1e1e1e; -fx-text-fill: white;">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="tfduration" editable="false" layoutX="199.0" layoutY="300.0" prefHeight="46.0" prefWidth="118.0" style="-fx-font-size: 25; -fx-font-weight: Bold; -fx-alignment: center; -fx-background-color: #1e1e1e; -fx-text-fill: white;">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="187.0" layoutY="305.0" prefHeight="39.0" style="-fx-font-size: 25; -fx-font-weight: Bold; -fx-text-fill: white;" text="/">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnDelete" layoutX="101.0" layoutY="446.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#deletePack4" prefHeight="58.0" prefWidth="187.0" style="-fx-background-color: #FFFFFF; -fx-font-size: 20; -fx-background-radius: 5; -fx-text-fill: #000000; -fx-alignment: center;" text="Delete" textAlignment="CENTER">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnModify" layoutX="101.0" layoutY="375.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#modifyPack4" prefHeight="58.0" prefWidth="187.0" style="-fx-background-color: #FFFFFF; -fx-font-size: 20; -fx-background-radius: 5; -fx-text-fill: #000000; -fx-alignment: center;" text="Modify" textAlignment="CENTER">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Group>
+         </children>
+      </Group>
+      <ImageView fitHeight="100.0" fitWidth="310.0" layoutX="100.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/heading.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="68.0" fitWidth="1920.0" layoutY="940.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/footer.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="1620.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/LOGOS.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

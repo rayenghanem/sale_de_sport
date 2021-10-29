@@ -31,7 +31,7 @@ import javafx.stage.Stage;
  *
  * @author ahmed
  */
-public class MembershipController implements Initializable {
+public class MembershipController2 implements Initializable {
 
     @FXML
     private TextField tfnom;
@@ -70,24 +70,15 @@ public class MembershipController implements Initializable {
     @FXML
     private ImageView btnForward;
     @FXML
-    private ImageView btnForward2;
+    private ImageView btnBack2;
     @FXML
-    private ImageView home;
+    private ImageView home2;
 
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-       /* tfnom1.setText(FXMain.p.getPack_nom());
-        tfdescription1.setText(FXMain.p.getPack_dscription());
-        tfmontant1.setText(Integer.toString(FXMain.u.getCin_User()));
-        tfduration1.setText(Integer.toString(FXMain.u.getNum_User()));
-        label_email_user.setText(FXMain.u.getEmail_User());
-        label_daten_user.setText("22/22/2222");
-        label_adresse_user.setText(FXMain.u.getAdresse_User());
-        labelnomprenom_user.setText(FXMain.u.getNom_User()+" "+FXMain.u.getPrenom_User());
-        */
         // TODO
     }    
 
@@ -107,14 +98,14 @@ public class MembershipController implements Initializable {
             
             ps.ajouterPacks(p);
             
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("membership_1.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("membership2_1.fxml"));
         try {
             Parent root = loader.load();
-           MembershipController_1 mc1 = loader.getController();
-           mc1.setTextpack_nom(p.getPack_nom());
-           mc1.setTextpack_description(p.getPack_description());
-           mc1.setTextpack_Montant(p.getPack_Montant());
-           mc1.setTextpack_duration(p.getPack_duration());
+           MembershipController2_1 mc2_1 = loader.getController();
+           mc2_1.setTextpack_nom(p.getPack_nom());
+           mc2_1.setTextpack_description(p.getPack_description());
+           mc2_1.setTextpack_Montant(p.getPack_Montant());
+           mc2_1.setTextpack_duration(p.getPack_duration());
            
            tfnom.getScene().setRoot(root);
         } catch (IOException ex) {
@@ -143,10 +134,10 @@ public class MembershipController implements Initializable {
     @FXML
     private void Forward(MouseEvent event) {
         
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("membership_1.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("membership2_1.fxml"));
         try {
             Parent root = loader.load();
-           MembershipController_1 mc1 = loader.getController();
+           MembershipController2_1 mc2_1 = loader.getController();
            
            btnForward.getScene().setRoot(root);
         } 
@@ -157,14 +148,14 @@ public class MembershipController implements Initializable {
     }
 
     @FXML
-    private void Forward2(MouseEvent event) {
+    private void Back2(MouseEvent event) {
         
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("membership2.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("membership.fxml"));
         try {
             Parent root = loader.load();
-           MembershipController2 mc2 = loader.getController();
+           MembershipController mc = loader.getController();
            
-           btnForward2.getScene().setRoot(root);
+           btnBack2.getScene().setRoot(root);
         } 
         catch (IOException ex) {
            System.err.println(ex.getMessage());
@@ -173,10 +164,10 @@ public class MembershipController implements Initializable {
     }
 
     @FXML
-    private void home(MouseEvent event)throws IOException {
+    private void home2(MouseEvent event) throws IOException {
  
-                home.getScene().getWindow().hide();
-              Parent root = FXMLLoader.load(getClass().getResource("/Intégration/Home.fxml"));
+                home2.getScene().getWindow().hide();
+              Parent root = FXMLLoader.load(getClass().getResource("/javafx/Home_admin.fxml"));
                 Stage mainStage = new Stage();
                 Scene scene = new Scene(root);
                 mainStage.setScene(scene);
