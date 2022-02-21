@@ -34,7 +34,7 @@ public class main extends Application {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("ajouterexercice.fxml"));
             Scene scene = new Scene(root);
-            primaryStage.setTitle("Hello World!");
+            primaryStage.setTitle("Ajouter EXERCICE");
             primaryStage.setScene(scene);
             primaryStage.show();
         } catch (IOException ex) {
